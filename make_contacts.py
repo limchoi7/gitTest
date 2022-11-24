@@ -8,7 +8,8 @@ NAME_1 = 'N:' #김;철수;;;
 NAME_2 = 'FN:' #철수 김
 TEL_TYPE = 'TEL;type=CELL;type=VOICE;type=pref:'
 END = 'END:VCARD\n'
- 
+
+#make file
 with open('contact_list.vcf', 'w') as w, open(TEL_NUMBERS, 'r') as r:
     l = [s.strip() for s in r.readlines()]
     for _tel_number in l:
